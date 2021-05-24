@@ -32,14 +32,14 @@ class View
         http_response_code($code);
         $path = "application/views/errors/$code.php";
         if (file_exists($path)) {
-            require_once $path;
+            require $path;
         }
         exit;
     }
 
     public function redirect($url)
     {
-        header("Location: $url");
+        header('Location: ' . $url);
         exit;
     }
 

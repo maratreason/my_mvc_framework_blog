@@ -2,7 +2,7 @@
 
 return [
     'all' => [
-        'login'
+        'login',
     ],
     'authorize' => [
         // авторизированные пользователи
